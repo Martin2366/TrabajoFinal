@@ -1,0 +1,10 @@
+.caracteristicas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 10px 0 20px;
+}
+
+.caracteristicas .icono { font-size: 1.8rem; }
+.caracteristicas h3 { margin: 8px 0; font-size: 1.15rem; }
+.caracteristicas p { color: var(--muted); font-size: .95rem; }

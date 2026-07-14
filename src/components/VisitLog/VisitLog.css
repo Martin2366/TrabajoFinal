@@ -1,0 +1,79 @@
+.bitacora-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 420px) 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.caja-form {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.caja-form h3 { font-size: 1.2rem; margin-bottom: 18px; }
+
+.visita-form-acciones {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+.visita-form-acciones .btn-principal { flex: 1; }
+
+.bitacora-registros { min-height: 100%; }
+
+.bitacora-contador {
+  color: var(--muted);
+  font-size: .9rem;
+  margin-bottom: 14px;
+}
+
+.visita-lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.visita-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px 20px;
+  animation: aparecer .3s ease both;
+}
+
+.visita-item-cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.visita-nickname { font-weight: 700; color: var(--accent); }
+.visita-fecha { font-size: .82rem; color: var(--muted); }
+
+.visita-comentario {
+  color: var(--text);
+  margin-bottom: 14px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.visita-item-acciones { display: flex; gap: 10px; }
+
+.visita-vacio {
+  color: var(--muted);
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  padding: 28px;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .bitacora-layout { grid-template-columns: 1fr; }
+  .caja-form { padding: 24px; }
+}
